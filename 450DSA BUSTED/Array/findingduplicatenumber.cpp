@@ -13,13 +13,9 @@ void set_IO() {
 #endif
 }
 
-/*
-
-*/
-
 class Solution {
 public:
-	int findDuplicate(vector<int>& nums) {
+	/*int findDuplicate(vector<int>& nums) {
 		int n = nums.size();
 		int ans = 0;
 		for (int i = 0; i < n; i++) {
@@ -29,6 +25,10 @@ public:
 			ans = ans ^ i;
 		}
 		return ans;
+	}*/
+	int findDuplicate(vector<int>& nums) {
+		int n = nums.size();
+
 	}
 };
 
