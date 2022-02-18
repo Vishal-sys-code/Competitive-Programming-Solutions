@@ -19,12 +19,33 @@ Expexted Space Complexity:- O(1) => no extra space
 
 class Solution {
 public:
+	void multiply(int x, vector<int>&multiplicand) {
+		int carry = 0;
+		vector<int>::iterator i;
+
+		for (i = multiplicand.begin(); i != multiplicand.end(); i++) {
+			int prod = (*i) * x + carry;
+			*i = prod % 10;
+			carry  = prod / 10;
+		}
+
+		while (carry) {
+			multiplicand.push_back(carry % 10);
+			carry = carry / 10;
+		}
+	}
 	vector<int> factorial(int N) {
 		//code here
-		if (N < 0) {
-			return N;
+		vector<int> ans;
+		ans.push_back(1);
+		vector<int> :: iterator it;
+		for (int i = 2; i <= n; i++) {
+			multiply(i, ans);
 		}
-		return factorial(N) * factorial(N - 1);
+		reverse(ans.begin(), ans.end());
+		for (int it = ans.begin(); it != ans.end(); ++it) {
+			cout << *it;
+		}
 	}
 };
 
