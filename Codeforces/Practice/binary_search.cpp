@@ -21,7 +21,7 @@ int binarySearch(int arr[], int l, int r, int x) {
 		if (arr[mid] == x) {
 			return mid;
 		}
-		else if (arr[mid] < x) {
+		if (arr[mid] < x) {
 			l = mid + 1;
 		}
 		else {
@@ -50,14 +50,5 @@ signed main() {
 			cout << "found" << endl;
 		}
 	}
-	// int low = 0;
-	// int high = n - 1;
-	// int ans = binarySearch(arr, 0, n - 1, X);
-	// if (ans == -1) {
-	// 	cout << "not found" << endl;
-	// }
-	// else {
-	// 	cout << "found" << endl;
-	// }
 	return 0;
 }
