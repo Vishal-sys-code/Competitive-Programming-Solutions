@@ -1,4 +1,6 @@
-	JAVASCRIPT:-
+/* 
+
+JAVASCRIPT:-
 
 1.)In computer science, data is anything that is meaningful to the computer. JavaScript provides eight different data types which are undefined, null, boolean, string, symbol, bigint, number, and object.
 
@@ -152,6 +154,6 @@ const sandwich = ["peanut butter", "jelly", "bread"];
 const teams = [["Bulls", 23], ["White Sox", 45]];
 This is also called a multi-dimensional array.
 
-15.) 
+*/
 
 
